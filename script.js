@@ -11,7 +11,6 @@ let specialChar = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")"];
 let upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 let lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
-//let password = generatePassword(length, upperCase, lowerCase, numbers, specialChar)
 
 // Assignment code here
 function generatePassword() {
@@ -32,7 +31,7 @@ function generatePassword() {
     ) {
         return alert("Must include at least one character type")
     }
-    //what to select and put into pot (need help with this structure)
+    //what user selects yes to goes into pot
     if (shouldIncludeSpecialChar === true) {
         pot = pot.concat(specialChar);
     }
